@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      type="image/x-icon"
+    />
+    <title>JS</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number guessing game</h1>
+      <p>
+        We have selected a random number between 1 and 100. See if you can guess
+        it in 10 turns or fewer. We'll tell you if your guess was too high or
+        too low.
+      </p>
+      <div>
+        <span>Enter a guess:</span>
+        <input type="number" id="guessInput" />
+        <button id="guessButton">Submit guess</button>
+      </div>
+      <div class="priviousGuesses d-none">
+        <span>Privious Guesses :</span>
+        <ul id="previousGuessesList"></ul>
+      </div>
+      <p id="resultMessage"></p>
+      <button id="resetGame" class="d-none">reset game</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

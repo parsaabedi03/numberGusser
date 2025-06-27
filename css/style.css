@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.priviousGuesses {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#previousGuessesList {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+#previousGuessesList li {
+  margin: 0 0 0 10px;
+}
+
+.d-none {
+  display: none;
+}
