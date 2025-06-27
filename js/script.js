@@ -58,7 +58,7 @@ const handlePriviousGuesses = () => {
 
 const handleResetGame = () => {
   randomNumber = Math.floor(Math.random() * 100) + 1;
-  guessInput.focus()
+  guessInput.focus();
   guessInput.value = "";
   guessInput.disabled = false;
   guessButton.disabled = false;
