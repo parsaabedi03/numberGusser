@@ -12,7 +12,7 @@ const priviousGuesses = [];
 
 const handleClick = () => {
   resultMessage.classList.remove("d-none");
-
+  guessInput.focus();
   if (
     guessInput.value === "" ||
     guessInput.value <= 1 ||
@@ -58,6 +58,7 @@ const handlePriviousGuesses = () => {
 
 const handleResetGame = () => {
   randomNumber = Math.floor(Math.random() * 100) + 1;
+  guessInput.focus()
   guessInput.value = "";
   guessInput.disabled = false;
   guessButton.disabled = false;
